@@ -9,12 +9,7 @@ interface TodoListProps {
   onEdit: (id: number, newText: string) => void;
 }
 
-export const TodoList: React.FC<TodoListProps> = ({
-  todos,
-  onAdd,
-  onDelete,
-  onEdit,
-}) => {
+export const TodoList = ({todos,onAdd,onDelete,onEdit} :TodoListProps ) => {
   const [newTodo, setNewTodo] = useState("");
 
   const handleAdd = () => {
