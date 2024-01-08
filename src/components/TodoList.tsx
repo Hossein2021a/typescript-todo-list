@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Todo } from "../types";
 import { TodoItem } from "./TodoItem";
-
+import { TodoListProps } from "../types";
 
 
 export const TodoList = ({todos,onAdd,onDelete,onEdit} :TodoListProps ) => {
