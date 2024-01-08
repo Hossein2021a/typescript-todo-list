@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { TodoItemProps } from "../types";
 
-export const TodoItem: React.FC<TodoItemProps> = ({
-  todo,
-  onDelete,
-  onEdit,
-}) => {
+export const TodoItem = ({todo,onDelete,onEdit} :TodoItemProps ) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState(todo.text);
 
