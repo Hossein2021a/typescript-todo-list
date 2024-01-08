@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import { Todo } from "../types";
 import { TodoItem } from "./TodoItem";
 
-interface TodoListProps {
-  todos: Todo[];
-  onAdd: (text: string) => void;
-  onDelete: (id: number) => void;
-  onEdit: (id: number, newText: string) => void;
-}
+
 
 export const TodoList = ({todos,onAdd,onDelete,onEdit} :TodoListProps ) => {
   const [newTodo, setNewTodo] = useState("");
