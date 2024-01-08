@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TodoList } from './components/TodoList';
 import { Todo } from './types';
 
-const App: React.FC = () => {
+const App = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   const handleAddTodo = (text: string) => {
