@@ -8,4 +8,11 @@ export interface TodoItemProps {
     onDelete: (id: number) => void;
     onEdit: (id: number, newText: string) => void;
   }
+
+export interface TodoListProps {
+  todos: Todo[];
+  onAdd: (text: string) => void;
+  onDelete: (id: number) => void;
+  onEdit: (id: number, newText: string) => void;
+}
   
