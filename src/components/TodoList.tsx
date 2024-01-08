@@ -8,7 +8,7 @@ export const TodoList = ({todos,onAdd,onDelete,onEdit} :TodoListProps ) => {
   const [newTodo, setNewTodo] = useState("");
 
   const handleAdd = () => {
-    if (newTodo.trim() !== "") {
+    if (newTodo !== "") {
       onAdd(newTodo);
       setNewTodo("");
     }
